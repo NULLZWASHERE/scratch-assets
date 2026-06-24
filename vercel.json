@@ -6,7 +6,7 @@
     },
     {
       "source": "/projects/:id",
-      "destination": "/api/project/:id"
+      "destination": "/api/projects/:id"
     }
   ]
 }
