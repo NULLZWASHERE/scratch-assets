@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/users/:username",
+      "destination": "/api/scratch/:username"
+    }
+  ]
+}
