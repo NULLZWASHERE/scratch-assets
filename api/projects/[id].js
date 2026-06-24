@@ -1,16 +1,8 @@
 export default async function handler(req, res) {
   const { id } = req.query;
 
-  const url = `https://scratch.mit.edu/projects/${id}/`;
-
-  const response = await fetch(url, {
-    headers: {
-      "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
-    }
+  res.json({
+    id,
+    url: `https://scratch.mit.edu/projects/${id}/`
   });
-
-  const html = await response.text();
-
-  res.setHeader("Content-Type", "text/html");
-  res.status(response.status).send(html);
 }
