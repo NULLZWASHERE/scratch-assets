@@ -3,6 +3,10 @@
     {
       "source": "/users/:username",
       "destination": "/api/scratch/:username"
+    },
+    {
+      "source": "/projects/:id",
+      "destination": "/api/project/:id"
     }
   ]
 }
